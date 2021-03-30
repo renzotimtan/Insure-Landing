@@ -37,26 +37,26 @@
     <body>
         <nav class="navbar">
             <div class="navbar-content">
-                <div class="navbar-content__logo">
+                <div class="navbar-logo">
                     <img src="images/logo.png" alt="" />
                 </div>
 
-                <div class="navbar-content__links">
+                <div class="navbar-links">
                     <a href="#" class="navbar-link">How We Work</a>
                     <a href="#" class="navbar-link">Blog</a>
                     <a href="#" class="navbar-link">Account</a>
                     <a href="#" class="navbar-link"
-                        ><button class="nav-button">View Plans</button></a
+                        ><button class="navbar-button">View Plans</button></a
                     >
                 </div>
 
                 <img
-                    class="nav-burger"
+                    class="navbar-burger"
                     src="images/icon-hamburger.png"
                     alt=""
                 />
             </div>
-            <div class="nav-links__mobile">
+            <div class="navbar-mobile">
                 <a href="#" class="navbar-link">How We Work</a>
                 <a href="#" class="navbar-link">Blog</a>
                 <a href="#" class="navbar-link">Account</a>
@@ -66,21 +66,29 @@
             </div>
         </nav>
 
+        <section>
+            <img
+                class="intro-mobile"
+                src="images/image-intro-desktop.jpg"
+                alt=""
+            />
+        </section>
+
         <header class="header">
             <div class="header-content">
-                <div class="header-content__text">
-                    <div class="line"></div>
-                    <h1>Humanizing your insurance.</h1>
-                    <p>
+                <div class="header-text">
+                    <div class="header-line"></div>
+                    <h1 class="header-heading">Humanizing your insurance.</h1>
+                    <p class="header-paragraph">
                         Get your life insurance coverage easier and faster. We
                         blend our expertise and technology to help you find the
                         plan that’s right for you. Ensure you and your loved
                         ones are protected.
                     </p>
-                    <button>View Plans</button>
+                    <button class="header-button">View Plans</button>
                 </div>
 
-                <div class="header-content__img">
+                <div class="header-img">
                     <img src="images/image-intro-desktop.jpg" alt="" />
                 </div>
             </div>
@@ -93,11 +101,11 @@
 
         <section class="about">
             <div class="about-content">
-                <div class="line"></div>
+                <div class="about-line"></div>
                 <h2>We're different</h2>
 
-                <div class="about-content__list">
-                    <div class="about-content__item">
+                <div class="about-list">
+                    <div class="about-item">
                         <img src="images/icon-snappy-process.png" alt="" />
                         <h3>Snappy Process</h3>
                         <p>
@@ -106,7 +114,7 @@
                         </p>
                     </div>
 
-                    <div class="about-content__item">
+                    <div class="about-item">
                         <img src="images/icon-affordable-prices.png" alt="" />
                         <h3>Affordable Prices</h3>
                         <p>
@@ -116,7 +124,7 @@
                         </p>
                     </div>
 
-                    <div class="about-content__item">
+                    <div class="about-item">
                         <img src="images/icon-people-first.png" alt="" />
                         <h3>People First</h3>
                         <p>
@@ -131,11 +139,11 @@
 
         <section class="work">
             <div class="work-content">
-                <h2>Find out more about how we work</h2>
-                <button>How We Work</button>
+                <h2 class="work-header">Find out more about how we work</h2>
+                <button class="work-button">How We Work</button>
             </div>
             <img
-                class="pattern"
+                class="work-pattern"
                 src="images/bg-pattern-how-we-work-desktop.png"
                 alt=""
             />
@@ -143,7 +151,7 @@
 
         <footer class="footer">
             <div class="footer-content">
-                <div class="footer-content__socmed">
+                <div class="footer-socmed">
                     <img src="images/logo.png" alt="" />
                     <div class="socmed-list">
                         <i
@@ -158,8 +166,8 @@
                 <hr />
                 <div class="footer-links-list">
                     <div class="footer-link">
-                        <p class="footer-link__header">Our Company</p>
-                        <div class="footer-link__links">
+                        <p class="footer-link-header">Our Company</p>
+                        <div class="footer-link-links">
                             <a href="">How We Work</a>
                             <a href="">Why Insure?</a>
                             <a href="">View Plans</a>
@@ -167,8 +175,8 @@
                         </div>
                     </div>
                     <div class="footer-link">
-                        <p class="footer-link__header">Help Me</p>
-                        <div class="footer-link__links">
+                        <p class="footer-link-header">Help Me</p>
+                        <div class="footer-link-links">
                             <a href="">FAQ</a>
                             <a href="">Terms of use</a>
                             <a href="">Privacy policy</a>
@@ -176,16 +184,16 @@
                         </div>
                     </div>
                     <div class="footer-link">
-                        <p class="footer-link__header">Contact</p>
-                        <div class="footer-link__links">
+                        <p class="footer-link-header">Contact</p>
+                        <div class="footer-link-links">
                             <a href="">Sales</a>
                             <a href="">Support</a>
                             <a href="">Live chat</a>
                         </div>
                     </div>
                     <div class="footer-link">
-                        <p class="footer-link__header">Others</p>
-                        <div class="footer-link__links">
+                        <p class="footer-link-header">Others</p>
+                        <div class="footer-link-links">
                             <a href="">Careers</a>
                             <a href="">Press</a>
                             <a href="">Licenses</a>
@@ -196,8 +204,8 @@
         </footer>
 
         <script>
-            const burger = document.querySelector('.nav-burger');
-            const navlinks = document.querySelector('.nav-links__mobile');
+            const burger = document.querySelector('.navbar-burger');
+            const navlinks = document.querySelector('.navbar-mobile');
 
             burger.addEventListener('click', (e) => {
                 navlinks.classList.toggle('active');
